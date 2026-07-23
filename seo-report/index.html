@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>تقرير قابلية الاكتشاف — Shisha Lounge Angelo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --bg-card: #ffffff;
+      --ink: #1c1917;
+      --ink-soft: #57534e;
+      --ink-mute: #78716c;
+      --line: #e7e5e4;
+      --line-strong: #d6d3d1;
+      --accent: #9a6b3a;
+      --accent-soft: #f3ebe1;
+      --good: #166534;
+      --good-bg: #ecfdf3;
+      --warn: #a16207;
+      --warn-bg: #fffbeb;
+      --bad: #b91c1c;
+      --bad-bg: #fef2f2;
+      --ok: #1d4ed8;
+      --ok-bg: #eff6ff;
+      --shadow: 0 1px 2px rgba(28, 25, 23, 0.04), 0 12px 32px rgba(28, 25, 23, 0.06);
+      --radius: 14px;
+      --max: 920px;
+      --font: "DM Sans", system-ui, sans-serif;
+      --font-ar: "IBM Plex Sans Arabic", "DM Sans", system-ui, sans-serif;
+      --font-display: "Source Serif 4", Georgia, serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #f3ebe1 0%, transparent 55%),
+        radial-gradient(900px 400px at 100% 0%, #efe8df 0%, transparent 45%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    html[lang="ar"] body { font-family: var(--font-ar); }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+      padding: 1.5rem 0 4rem;
+    }
+
+    /* Top bar */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.75rem;
+    }
+    .brand-mini {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .brand-mini strong {
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+    }
+    .brand-mini span {
+      font-size: 0.8rem;
+      color: var(--ink-mute);
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px;
+      box-shadow: var(--shadow);
+    }
+    .lang-toggle button {
+      border: 0;
+      background: transparent;
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.82rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      cursor: pointer;
+      color: var(--ink-soft);
+    }
+    .lang-toggle button[aria-pressed="true"] {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 4px);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.5rem 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    @media (min-width: 720px) {
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 2rem 2rem 1.75rem;
+      }
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 0.85rem;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid var(--line-strong);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .badge.neutral {
+      background: #f5f5f4;
+      color: var(--ink-soft);
+      border-color: var(--line);
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(1.55rem, 3.5vw, 2.05rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.65rem;
+    }
+    html[lang="ar"] .hero h1 { font-family: var(--font-ar); font-weight: 700; }
+
+    .hero-lead {
+      color: var(--ink-soft);
+      font-size: 1rem;
+      max-width: 38rem;
+      margin-bottom: 1rem;
+    }
+    .hero-meta {
+      font-size: 0.85rem;
+      color: var(--ink-mute);
+    }
+    .hero-meta a { color: var(--accent); }
+
+    /* Gauge */
+    .gauge-block {
+      text-align: center;
+      justify-self: end;
+    }
+    .gauge {
+      position: relative;
+      width: 168px;
+      height: 168px;
+      margin: 0 auto 0.5rem;
+    }
+    .gauge svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+    .gauge-track { fill: none; stroke: #e7e5e4; stroke-width: 10; }
+    .gauge-value {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 10;
+      stroke-linecap: round;
+      stroke-dasharray: 339.292;
+      stroke-dashoffset: 125.5; /* 63/100 → offset = 339.292 * (1-0.63) */
+      transition: stroke-dashoffset 0.9s ease;
+    }
+    .gauge-center {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .gauge-number {
+      font-family: var(--font-display);
+      font-size: 2.75rem;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+    html[lang="ar"] .gauge-number { font-family: var(--font-ar); }
+    .gauge-of {
+      font-size: 0.8rem;
+      color: var(--ink-mute);
+      margin-top: 0.2rem;
+    }
+    .gauge-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+    }
+
+    /* Callout */
+    .callout {
+      background: var(--warn-bg);
+      border: 1px solid #fde68a;
+      border-radius: var(--radius);
+      padding: 1rem 1.15rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.92rem;
+      color: #713f12;
+    }
+    .callout strong { display: block; margin-bottom: 0.25rem; color: #854d0e; }
+
+    /* Sections */
+    section {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.35rem 1.25rem;
+      margin-bottom: 1.1rem;
+    }
+    @media (min-width: 720px) {
+      section { padding: 1.5rem 1.6rem; }
+    }
+    section h2 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.35rem;
+    }
+    html[lang="ar"] section h2 { font-family: var(--font-ar); font-weight: 700; }
+    .section-intro {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      margin-bottom: 1.1rem;
+    }
+
+    /* Category bars */
+    .cats { display: grid; gap: 0.85rem; }
+    .cat {
+      display: grid;
+      gap: 0.35rem;
+    }
+    .cat-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+    }
+    .cat-name { font-weight: 600; font-size: 0.92rem; }
+    .cat-score {
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+    .cat-score.good { color: var(--good); }
+    .cat-score.mid { color: var(--ok); }
+    .cat-score.warn { color: var(--warn); }
+    .cat-score.bad { color: var(--bad); }
+    .bar {
+      height: 10px;
+      background: #f5f5f4;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .bar > span {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      width: 0;
+      transition: width 0.8s ease;
+    }
+    .bar > span.good { background: linear-gradient(90deg, #16a34a, #4ade80); }
+    .bar > span.mid { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+    .bar > span.warn { background: linear-gradient(90deg, #ca8a04, #fbbf24); }
+    .bar > span.bad { background: linear-gradient(90deg, #dc2626, #f87171); }
+    .cat-hint {
+      font-size: 0.8rem;
+      color: var(--ink-mute);
+    }
+
+    /* Two columns */
+    .split {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .split { grid-template-columns: 1fr 1fr; }
+    }
+
+    .list-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1rem;
+      background: #fafaf9;
+      height: 100%;
+    }
+    .list-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      display: inline-block;
+    }
+    .dot.good { background: var(--good); }
+    .dot.bad { background: var(--bad); }
+
+    .list-card ul {
+      list-style: none;
+      display: grid;
+      gap: 0.55rem;
+    }
+    .list-card li {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      padding-inline-start: 1rem;
+      position: relative;
+      line-height: 1.45;
+    }
+    .list-card li::before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 0;
+      top: 0.55em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--line-strong);
+    }
+    .list-card.good li::before { background: var(--good); }
+    .list-card.improve li::before { background: var(--warn); }
+
+    /* Priority pills */
+    .pri {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.12rem 0.4rem;
+      border-radius: 4px;
+      margin-inline-end: 0.35rem;
+      vertical-align: middle;
+    }
+    .pri.p0 { background: var(--bad-bg); color: var(--bad); }
+    .pri.p1 { background: var(--warn-bg); color: var(--warn); }
+    .pri.p2 { background: #f5f5f4; color: var(--ink-mute); }
+
+    /* Metrics grid */
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.65rem;
+    }
+    @media (min-width: 560px) {
+      .metrics { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 800px) {
+      .metrics { grid-template-columns: repeat(6, 1fr); }
+    }
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.75rem 0.65rem;
+      text-align: center;
+      background: #fafaf9;
+    }
+    .metric .val {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    html[lang="ar"] .metric .val { font-family: var(--font-ar); }
+    .metric .lab {
+      font-size: 0.72rem;
+      color: var(--ink-mute);
+      margin-top: 0.2rem;
+      line-height: 1.3;
+    }
+    .metric.strong .val { color: var(--good); }
+    .metric.weak .val { color: var(--bad); }
+
+    /* Analogy box */
+    .analogy {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      background: var(--accent-soft);
+      border-radius: 10px;
+      font-size: 0.88rem;
+      color: #5c4030;
+      border: 1px solid #e8d9c8;
+    }
+
+    /* After placeholder */
+    .after-box {
+      border: 2px dashed var(--line-strong);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      background:
+        repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 8px,
+          rgba(28, 25, 23, 0.015) 8px,
+          rgba(28, 25, 23, 0.015) 16px
+        );
+    }
+    .after-box .big {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    html[lang="ar"] .after-box .big { font-family: var(--font-ar); }
+    .after-box p {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      max-width: 32rem;
+      margin: 0 auto;
+    }
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 0.75rem;
+      align-items: center;
+      margin-top: 1.25rem;
+      max-width: 420px;
+      margin-inline: auto;
+    }
+    .compare-cell {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.85rem;
+      background: #fff;
+    }
+    .compare-cell .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink-mute);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .compare-cell .num {
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-family: var(--font-display);
+    }
+    html[lang="ar"] .compare-cell .num { font-family: var(--font-ar); }
+    .compare-cell.future .num {
+      color: var(--ink-mute);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .compare-arrow {
+      font-size: 1.25rem;
+      color: var(--ink-mute);
+    }
+
+    /* Steps */
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      display: grid;
+      gap: 0.7rem;
+    }
+    .steps li {
+      counter-increment: step;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+    .steps li::before {
+      content: counter(step);
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    /* Footer */
+    footer.report-foot {
+      margin-top: 1.5rem;
+      padding: 1.1rem 0 0;
+      border-top: 1px solid var(--line);
+      font-size: 0.8rem;
+      color: var(--ink-mute);
+      display: grid;
+      gap: 0.4rem;
+    }
+    footer.report-foot a { color: var(--accent); }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand-mini">
+        <strong>Shisha Lounge Angelo</strong>
+        <span data-i18n="brandSub">Amsterdam · De Pijp</span>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" id="btn-ar" aria-pressed="true">العربية</button>
+        <button type="button" id="btn-en" aria-pressed="false">English</button>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div>
+        <div class="badge-row">
+          <span class="badge" data-i18n="badgeBaseline">Baseline · before SEO work</span>
+          <span class="badge neutral">2026-07-23</span>
+        </div>
+        <h1 data-i18n="title">How easy is it to find Angelo online?</h1>
+        <p class="hero-lead" data-i18n="lead">
+          A plain-language snapshot of the website’s discoverability today — before we start SEO improvements. Think of it as a “health check” for how clearly Google and guests can find the lounge.
+        </p>
+        <p class="hero-meta">
+          <span data-i18n="siteLabel">Live site:</span>
+          <a href="https://shishaloungeangelo.me/" target="_blank" rel="noopener">shishaloungeangelo.me</a>
+        </p>
+      </div>
+      <div class="gauge-block">
+        <div class="gauge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <circle class="gauge-track" cx="60" cy="60" r="54"></circle>
+            <circle class="gauge-value" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="gauge-center">
+            <div class="gauge-number">63</div>
+            <div class="gauge-of" data-i18n="of100">of 100</div>
+          </div>
+        </div>
+        <div class="gauge-label" data-i18n="gaugeLabel">Overall readiness</div>
+      </div>
+    </header>
+
+    <div class="callout">
+      <strong data-i18n="disclaimerTitle">Important disclaimer</strong>
+      <span data-i18n="disclaimerBody">
+        This is a baseline measured on 23 July 2026, before SEO improvements. It is not a Google Search Console ranking report — we are not claiming search positions. After the work is done, we will re-measure with the same method and compare.
+      </span>
+    </div>
+
+    <section>
+      <h2 data-i18n="s1Title">What does 63/100 mean?</h2>
+      <p class="section-intro" data-i18n="s1Intro">
+        We scored six everyday areas of the website and averaged them. A higher score means search engines and guests can find and understand the lounge more easily.
+      </p>
+      <div class="cats" id="category-bars"></div>
+      <div class="analogy" data-i18n="s1Analogy">
+        Analogy: imagine the lounge has a beautiful storefront (fast page, clear name and address) but the “Open” sign and street map to the door are incomplete. Guests who already know you can arrive — new guests need clearer signage.
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="s2Title">Speed &amp; first impression (phone)</h2>
+      <p class="section-intro" data-i18n="s2Intro">
+        On a phone test, the page loads quickly and feels stable. That helps guests — and it helps Google trust the experience.
+      </p>
+      <div class="metrics">
+        <div class="metric strong"><div class="val">100</div><div class="lab" data-i18n="mSeo">Automated SEO checklist</div></div>
+        <div class="metric strong"><div class="val">90</div><div class="lab" data-i18n="mPerf">Performance score</div></div>
+        <div class="metric strong"><div class="val">2.1s</div><div class="lab" data-i18n="mLcp">Main content visible</div></div>
+        <div class="metric strong"><div class="val">1.5s</div><div class="lab" data-i18n="mFcp">First paint</div></div>
+        <div class="metric strong"><div class="val">0</div><div class="lab" data-i18n="mCls">Layout jump</div></div>
+        <div class="metric weak"><div class="val">9.1s</div><div class="lab" data-i18n="mSi">Visual completeness</div></div>
+      </div>
+      <div class="analogy" data-i18n="s2Analogy">
+        Note: the perfect “100” on Google’s automated checklist is a narrow test. The site can still miss important discovery files (like a sitemap) and still get 100 on that checklist. Our overall 63 reflects the fuller picture. Page weight ≈ 313 KiB — pleasantly light.
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="s3Title">What’s already good vs what we’ll improve</h2>
+      <p class="section-intro" data-i18n="s3Intro">
+        The foundation is solid. The gaps below are the highest-impact items for the next phase of work.
+      </p>
+      <div class="split">
+        <div class="list-card good">
+          <h3><span class="dot good"></span><span data-i18n="goodTitle">Already working well</span></h3>
+          <ul>
+            <li data-i18n="g1">Secure website (HTTPS) with correct redirects</li>
+            <li data-i18n="g2">Clear page title and description mentioning De Pijp / Amsterdam</li>
+            <li data-i18n="g3">Nice preview when sharing on social apps (image + text)</li>
+            <li data-i18n="g4">Name, address, and phone match across the page</li>
+            <li data-i18n="g5">Google Maps link points to the real Angelo place</li>
+            <li data-i18n="g6">Seven languages available (including Arabic RTL)</li>
+            <li data-i18n="g7">Fast, stable mobile experience (LCP 2.1s, no layout jump)</li>
+          </ul>
+        </div>
+        <div class="list-card improve">
+          <h3><span class="dot bad"></span><span data-i18n="improveTitle">Priority improvements</span></h3>
+          <ul>
+            <li><span class="pri p0">P0</span><span data-i18n="i1">No robots.txt — Google’s “visitor instructions” file is missing</span></li>
+            <li><span class="pri p0">P0</span><span data-i18n="i2">No sitemap.xml — no clear map of all language pages</span></li>
+            <li><span class="pri p0">P0</span><span data-i18n="i3">Languages not formally linked in the page head (hreflang)</span></li>
+            <li><span class="pri p1">P1</span><span data-i18n="i4">Social links are placeholders, not real business profiles</span></li>
+            <li><span class="pri p1">P1</span><span data-i18n="i5">Opening hours &amp; price range missing from structured business data</span></li>
+            <li><span class="pri p1">P1</span><span data-i18n="i6">Automatic language redirect may confuse search crawlers</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="s4Title">Plain-language guide to the six scores</h2>
+      <p class="section-intro" data-i18n="s4Intro">
+        Each area answers a simple question about how easy it is for Google — and for guests — to find the lounge.
+      </p>
+      <div class="cats" id="explain-cats"></div>
+    </section>
+
+    <section>
+      <h2 data-i18n="s5Title">Recommended next steps (in order)</h2>
+      <p class="section-intro" data-i18n="s5Intro">
+        These are the planned improvements for the SEO phase — not yet implemented on this baseline date.
+      </p>
+      <ol class="steps">
+        <li data-i18n="r1">Add robots.txt and a sitemap listing all 7 language home pages</li>
+        <li data-i18n="r2">Add proper language tags in the page head so Google knows each translation</li>
+        <li data-i18n="r3">Replace placeholder social links with real profiles (or remove them)</li>
+        <li data-i18n="r4">Publish opening hours and price range in the business data Google reads</li>
+        <li data-i18n="r5">Stop automatic language redirects from confusing search bots</li>
+        <li data-i18n="r6">Fill missing image descriptions; add a click-to-call phone link</li>
+        <li data-i18n="r7">Connect Google Search Console and submit the sitemap for measurement</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 data-i18n="s6Title">Before / after</h2>
+      <div class="after-box">
+        <div class="big" data-i18n="afterBig">After SEO work we’ll re-measure here</div>
+        <p data-i18n="afterBody">
+          Same six categories, same method, same live URL. This box will be updated with the new overall score so you can see the improvement side by side.
+        </p>
+        <div class="compare">
+          <div class="compare-cell">
+            <div class="label" data-i18n="beforeLabel">Before</div>
+            <div class="num">63</div>
+          </div>
+          <div class="compare-arrow" aria-hidden="true">→</div>
+          <div class="compare-cell future">
+            <div class="label" data-i18n="afterLabel">After</div>
+            <div class="num" data-i18n="afterSoon">Coming soon</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="report-foot">
+      <div data-i18n="foot1">Prepared for Shisha Lounge Angelo · Albert Cuypstraat 158 A, Amsterdam</div>
+      <div data-i18n="foot2">Baseline audit date: 2026-07-23 · Evidence: live site HTML + Lighthouse 13.4.1 (mobile)</div>
+      <div>
+        <span data-i18n="foot3">Report URL:</span>
+        <a href="https://shishaloungeangelo.me/seo-report/">shishaloungeangelo.me/seo-report/</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const CATEGORIES = [
+      { key: "technical", score: 48 },
+      { key: "onPage", score: 72 },
+      { key: "local", score: 68 },
+      { key: "content", score: 62 },
+      { key: "performance", score: 82 },
+      { key: "international", score: 42 },
+    ];
+
+    const I18N = {
+      ar: {
+        brandSub: "أمستردام · دي بايب",
+        badgeBaseline: "خط أساس · قبل أعمال الـ SEO",
+        title: "ما مدى سهولة العثور على أنجيلو على الإنترنت؟",
+        lead: "لمحة بسيطة عن قابلية اكتشاف الموقع اليوم — قبل بدء تحسينات الظهور في البحث. اعتبره «فحص صحة» لمدى وضوح اللوانج لمحركات البحث وللزوار الجدد.",
+        siteLabel: "الموقع المباشر:",
+        of100: "من 100",
+        gaugeLabel: "الجاهزية الإجمالية",
+        disclaimerTitle: "تنويه مهم",
+        disclaimerBody: "هذا قياس خط أساس بتاريخ 23 يوليو 2026، قبل تحسينات الـ SEO. ليس تقرير ترتيب من Google Search Console — لا ندّعي مراكز بحث محددة. بعد انتهاء العمل سنعيد القياس بنفس الطريقة ونقارن.",
+        s1Title: "ماذا يعني 63 من 100؟",
+        s1Intro: "قيّمنا ستة جوانب يومية في الموقع ثم أخذنا المتوسط. كلما ارتفع الرقم، كان أسهل على جوجل والزوار فهم اللوانج وإيجاده.",
+        s1Analogy: "تشبيه: الواجهة جميلة والسوق سريع، لكن «لافتة مفتوح» وخريطة الطريق للباب ما زالتا ناقصتين. من يعرفكم يصل — والزوار الجدد يحتاجون إشارات أوضح.",
+        s2Title: "السرعة والانطباع الأول (موبايل)",
+        s2Intro: "في اختبار الهاتف الصفحة تظهر بسرعة وثابتة. هذا يريح الزائر ويساعد جوجل على الثقة بالتجربة.",
+        mSeo: "قائمة SEO الآلية",
+        mPerf: "درجة الأداء",
+        mLcp: "ظهور المحتوى الرئيسي",
+        mFcp: "أول رسم للصفحة",
+        mCls: "قفز التخطيط",
+        mSi: "اكتمال المشهد بصريًا",
+        s2Analogy: "ملاحظة: درجة «100» في قائمة جوجل الآلية اختبار ضيق. قد يغيب ملف مهم (مثل خريطة الموقع) وتظل الدرجة 100. رقمنا الإجمالي 63 يعكس الصورة الأشمل. حجم الصفحة ≈ 313 كيبيبايت — خفيف وممتاز.",
+        s3Title: "ما يعمل جيدًا وما سنحسّنه",
+        s3Intro: "الأساس قوي. النقاط أدناه هي الأعلى تأثيرًا في المرحلة القادمة.",
+        goodTitle: "يعمل بالفعل بشكل جيد",
+        improveTitle: "أولويات التحسين",
+        g1: "موقع آمن (HTTPS) مع تحويلات صحيحة",
+        g2: "عنوان ووصف واضحان يذكران De Pijp / أمستردام",
+        g3: "معاينة جميلة عند المشاركة على التطبيقات الاجتماعية",
+        g4: "الاسم والعنوان والهاتف متّسقة في الصفحة",
+        g5: "رابط خرائط جوجل يشير لمكان أنجيلو الحقيقي",
+        g6: "سبع لغات متاحة (بما فيها العربية باتجاه RTL)",
+        g7: "تجربة موبايل سريعة وثابتة (محتوى رئيسي خلال 2.1ث بدون قفز)",
+        i1: "لا يوجد robots.txt — ملف «تعليمات الزيارة» لمحركات البحث مفقود",
+        i2: "لا يوجد sitemap.xml — لا خريطة واضحة لصفحات كل اللغات",
+        i3: "اللغات غير مربوطة رسميًا في رأس الصفحة (hreflang)",
+        i4: "روابط التواصل الاجتماعي تجريبية وليست حسابات النشاط الحقيقية",
+        i5: "ساعات العمل ونطاق الأسعار ناقصان من بيانات النشاط المنظمة",
+        i6: "إعادة التوجيه التلقائي للغة قد تربك برامج الزحف",
+        s4Title: "شرح بسيط للدرجات الست",
+        s4Intro: "كل جانب يجيب عن سؤال واحد: ما مدى سهولة أن يجد جوجل — والزائر — اللوانج؟",
+        s5Title: "الخطوات التالية المقترحة (بالترتيب)",
+        s5Intro: "هذه تحسينات مرحلة الـ SEO المخططة — ولم تُنفَّذ بعد في تاريخ خط الأساس هذا.",
+        r1: "إضافة robots.txt وخريطة موقع لكل صفحات اللغات السبع",
+        r2: "إضافة وسوم اللغة الصحيحة في رأس الصفحة كي يعرف جوجل كل ترجمة",
+        r3: "استبدال روابط التواصل التجريبية بملفات نشاط حقيقية (أو حذفها)",
+        r4: "نشر ساعات العمل ونطاق الأسعار في البيانات التي يقرأها جوجل",
+        r5: "منع إعادة التوجيه التلقائي للغة من إرباك برامج البحث",
+        r6: "إكمال أوصاف الصور الناقصة وإضافة رابط اتصال هاتفي مباشر",
+        r7: "ربط Google Search Console وإرسال خريطة الموقع للقياس",
+        s6Title: "قبل / بعد",
+        afterBig: "بعد أعمال الـ SEO سنعيد القياس هنا",
+        afterBody: "نفس الفئات الست، ونفس الطريقة، ونفس الرابط المباشر. سنحدّث هذا المربع بالدرجة الجديدة لترى التحسّن جنبًا إلى جنب.",
+        beforeLabel: "قبل",
+        afterLabel: "بعد",
+        afterSoon: "قريبًا",
+        foot1: "أُعدّ لـ Shisha Lounge Angelo · Albert Cuypstraat 158 A، أمستردام",
+        foot2: "تاريخ خط الأساس: 2026-07-23 · الأدلة: HTML للموقع المباشر + Lighthouse 13.4.1 (موبايل)",
+        foot3: "رابط التقرير:",
+        cats: {
+          technical: {
+            name: "تقني",
+            hint: "هل يجد جوجل الملفات الأساسية للتنقّل في الموقع؟",
+            explain: "مثل مفاتيح الباب ولافتة المدخل: robots.txt وخريطة الموقع ما زالا مفقودين، لذلك الدرجة منخفضة رغم الأمان الجيد.",
+          },
+          onPage: {
+            name: "محتوى الصفحة",
+            hint: "هل العنوان والوصف والعناوين واضحة للزائر؟",
+            explain: "العنوان والوصف وصورة المشاركة جاهزة. بعض صور المنيو بلا وصف نصي — تحسين سهل لاحقًا.",
+          },
+          local: {
+            name: "الظهور المحلي",
+            hint: "هل يظهر اللوانج بوضوح كمكان في أمستردام؟",
+            explain: "الاسم والعنوان والهاتف والخريطة متّسقة. ينقص ربط ساعات العمل والأسعار وحسابات التواصل الحقيقية.",
+          },
+          content: {
+            name: "المحتوى",
+            hint: "هل هناك محتوى كافٍ ليفهم الزائر العرض؟",
+            explain: "منيو ومراجعات وفعاليات بسبع لغات. الهيكل صفحة واحدة لكل لغة يحدّ من صفحات هبوط إضافية.",
+          },
+          performance: {
+            name: "الأداء",
+            hint: "هل الصفحة سريعة ومريحة على الهاتف؟",
+            explain: "أداء قوي جدًا (90). المحتوى الرئيسي يظهر بسرعة والصفحة لا تقفز. مؤشر الاكتمال البصري أبطأ — مجال للتحسين.",
+          },
+          international: {
+            name: "اللغات المتعددة",
+            hint: "هل يفهم جوجل نسخ اللغات المختلفة؟",
+            explain: "الترجمات موجودة وتعمل. ينقص الربط الرسمي بينها في رأس الصفحة، والتحويل التلقائي قد يربك البرامج الآلية.",
+          },
+        },
+        docTitle: "تقرير قابلية الاكتشاف — Shisha Lounge Angelo",
+      },
+      en: {
+        brandSub: "Amsterdam · De Pijp",
+        badgeBaseline: "Baseline · before SEO work",
+        title: "How easy is it to find Angelo online?",
+        lead: "A plain-language snapshot of the website’s discoverability today — before we start SEO improvements. Think of it as a “health check” for how clearly Google and guests can find the lounge.",
+        siteLabel: "Live site:",
+        of100: "of 100",
+        gaugeLabel: "Overall readiness",
+        disclaimerTitle: "Important disclaimer",
+        disclaimerBody: "This is a baseline measured on 23 July 2026, before SEO improvements. It is not a Google Search Console ranking report — we are not claiming search positions. After the work is done, we will re-measure with the same method and compare.",
+        s1Title: "What does 63/100 mean?",
+        s1Intro: "We scored six everyday areas of the website and averaged them. A higher score means search engines and guests can find and understand the lounge more easily.",
+        s1Analogy: "Analogy: imagine the lounge has a beautiful storefront (fast page, clear name and address) but the “Open” sign and street map to the door are incomplete. Guests who already know you can arrive — new guests need clearer signage.",
+        s2Title: "Speed & first impression (phone)",
+        s2Intro: "On a phone test, the page loads quickly and feels stable. That helps guests — and it helps Google trust the experience.",
+        mSeo: "Automated SEO checklist",
+        mPerf: "Performance score",
+        mLcp: "Main content visible",
+        mFcp: "First paint",
+        mCls: "Layout jump",
+        mSi: "Visual completeness",
+        s2Analogy: "Note: the perfect “100” on Google’s automated checklist is a narrow test. The site can still miss important discovery files (like a sitemap) and still get 100 on that checklist. Our overall 63 reflects the fuller picture. Page weight ≈ 313 KiB — pleasantly light.",
+        s3Title: "What’s already good vs what we’ll improve",
+        s3Intro: "The foundation is solid. The gaps below are the highest-impact items for the next phase of work.",
+        goodTitle: "Already working well",
+        improveTitle: "Priority improvements",
+        g1: "Secure website (HTTPS) with correct redirects",
+        g2: "Clear page title and description mentioning De Pijp / Amsterdam",
+        g3: "Nice preview when sharing on social apps (image + text)",
+        g4: "Name, address, and phone match across the page",
+        g5: "Google Maps link points to the real Angelo place",
+        g6: "Seven languages available (including Arabic RTL)",
+        g7: "Fast, stable mobile experience (LCP 2.1s, no layout jump)",
+        i1: "No robots.txt — Google’s “visitor instructions” file is missing",
+        i2: "No sitemap.xml — no clear map of all language pages",
+        i3: "Languages not formally linked in the page head (hreflang)",
+        i4: "Social links are placeholders, not real business profiles",
+        i5: "Opening hours & price range missing from structured business data",
+        i6: "Automatic language redirect may confuse search crawlers",
+        s4Title: "Plain-language guide to the six scores",
+        s4Intro: "Each area answers a simple question about how easy it is for Google — and for guests — to find the lounge.",
+        s5Title: "Recommended next steps (in order)",
+        s5Intro: "These are the planned improvements for the SEO phase — not yet implemented on this baseline date.",
+        r1: "Add robots.txt and a sitemap listing all 7 language home pages",
+        r2: "Add proper language tags in the page head so Google knows each translation",
+        r3: "Replace placeholder social links with real profiles (or remove them)",
+        r4: "Publish opening hours and price range in the business data Google reads",
+        r5: "Stop automatic language redirects from confusing search bots",
+        r6: "Fill missing image descriptions; add a click-to-call phone link",
+        r7: "Connect Google Search Console and submit the sitemap for measurement",
+        s6Title: "Before / after",
+        afterBig: "After SEO work we’ll re-measure here",
+        afterBody: "Same six categories, same method, same live URL. This box will be updated with the new overall score so you can see the improvement side by side.",
+        beforeLabel: "Before",
+        afterLabel: "After",
+        afterSoon: "Coming soon",
+        foot1: "Prepared for Shisha Lounge Angelo · Albert Cuypstraat 158 A, Amsterdam",
+        foot2: "Baseline audit date: 2026-07-23 · Evidence: live site HTML + Lighthouse 13.4.1 (mobile)",
+        foot3: "Report URL:",
+        cats: {
+          technical: {
+            name: "Technical",
+            hint: "Can Google find the basic “how to crawl this site” files?",
+            explain: "Like keys to the door and a street map: robots.txt and the sitemap are still missing, so this score is low even though security is solid.",
+          },
+          onPage: {
+            name: "On-page",
+            hint: "Are the title, description, and headings clear?",
+            explain: "Title, description, and social preview are ready. A few menu images lack text descriptions — an easy later fix.",
+          },
+          local: {
+            name: "Local visibility",
+            hint: "Does the lounge look like a real Amsterdam place?",
+            explain: "Name, address, phone, and Maps are consistent. Hours, price range, and real social profiles still need wiring in.",
+          },
+          content: {
+            name: "Content",
+            hint: "Is there enough content for a guest to understand the offer?",
+            explain: "Menu, reviews, and events exist in seven languages. A single page per language limits extra landing URLs.",
+          },
+          performance: {
+            name: "Performance",
+            hint: "Is the page fast and comfortable on a phone?",
+            explain: "Strong score (90). Main content appears quickly with no layout jump. Visual completeness is slower — room to polish.",
+          },
+          international: {
+            name: "Languages",
+            hint: "Does Google understand the different language versions?",
+            explain: "Translations exist and work. Formal head links between languages are missing, and auto-redirect may confuse crawlers.",
+          },
+        },
+        docTitle: "Discoverability report — Shisha Lounge Angelo",
+      },
+    };
+
+    function tone(score) {
+      if (score >= 80) return "good";
+      if (score >= 65) return "mid";
+      if (score >= 50) return "warn";
+      return "bad";
+    }
+
+    function applyI18n(lang) {
+      const t = I18N[lang];
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      document.title = t.docTitle;
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key] != null) el.textContent = t[key];
+      });
+      document.getElementById("btn-ar").setAttribute("aria-pressed", String(lang === "ar"));
+      document.getElementById("btn-en").setAttribute("aria-pressed", String(lang === "en"));
+      renderBars(lang);
+      renderExplain(lang);
+      try { localStorage.setItem("angelo-seo-report-lang", lang); } catch (_) {}
+    }
+
+    function renderBars(lang) {
+      const t = I18N[lang].cats;
+      const root = document.getElementById("category-bars");
+      root.innerHTML = CATEGORIES.map((c) => {
+        const tn = tone(c.score);
+        return `
+          <div class="cat">
+            <div class="cat-head">
+              <span class="cat-name">${t[c.key].name}</span>
+              <span class="cat-score ${tn}">${c.score}</span>
+            </div>
+            <div class="bar"><span class="${tn}" data-w="${c.score}"></span></div>
+            <div class="cat-hint">${t[c.key].hint}</div>
+          </div>`;
+      }).join("");
+      requestAnimationFrame(() => {
+        root.querySelectorAll(".bar > span").forEach((el) => {
+          el.style.width = el.getAttribute("data-w") + "%";
+        });
+      });
+    }
+
+    function renderExplain(lang) {
+      const t = I18N[lang].cats;
+      const root = document.getElementById("explain-cats");
+      root.innerHTML = CATEGORIES.map((c) => {
+        const tn = tone(c.score);
+        return `
+          <div class="cat" style="padding:0.75rem 0;border-bottom:1px solid var(--line)">
+            <div class="cat-head">
+              <span class="cat-name">${t[c.key].name}</span>
+              <span class="cat-score ${tn}">${c.score}/100</span>
+            </div>
+            <div class="cat-hint" style="margin-top:0.35rem;color:var(--ink-soft)">${t[c.key].explain}</div>
+          </div>`;
+      }).join("");
+    }
+
+    document.getElementById("btn-ar").addEventListener("click", () => applyI18n("ar"));
+    document.getElementById("btn-en").addEventListener("click", () => applyI18n("en"));
+
+    let start = "ar";
+    try {
+      const saved = localStorage.getItem("angelo-seo-report-lang");
+      if (saved === "en" || saved === "ar") start = saved;
+    } catch (_) {}
+    applyI18n(start);
+  </script>
+</body>
+</html>
