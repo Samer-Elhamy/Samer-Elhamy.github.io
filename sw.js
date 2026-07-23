@@ -1,52 +1,32 @@
-const CACHE_NAME = 'angelo-lounge-v2';
+const CACHE_NAME = 'angelo-lounge-v3';
 const BASE_PATH = '/';
-const ASSETS_TO_CACHE = [
-  BASE_PATH,
-  BASE_PATH + 'manifest.json',
-  BASE_PATH + 'images/icons/manifest-icon-192.maskable.png',
-  BASE_PATH + 'images/icons/manifest-icon-512.maskable.png',
-  BASE_PATH + 'images/logo.svg'
-];
+const SHELL = [BASE_PATH + 'manifest.json', BASE_PATH + 'images/logo.svg'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(ASSETS_TO_CACHE))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(SHELL)).catch(() => undefined)
   );
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
+    caches.keys().then((names) =>
+      Promise.all(names.filter((n) => n !== CACHE_NAME).map((n) => caches.delete(n)))
+    )
   );
   self.clients.claim();
 });
 
 self.addEventListener('fetch', (event) => {
-  // Navigation requests: Network first, then cache, then offline page (optional)
-  if (event.request.mode === 'navigate') {
-    event.respondWith(
-      fetch(event.request)
-        .catch(() => {
-          return caches.match(event.request)
-            .then((response) => response || caches.match(BASE_PATH));
-        })
-    );
+  const url = new URL(event.request.url);
+  // Never cache images or hashed assets aggressively — always prefer network for fresh/fast CDN hits
+  if (url.pathname.includes('/_astro/') || /\.(webp|avif|jpg|jpeg|png|gif|mp4)$/i.test(url.pathname)) {
     return;
   }
-
-  // Default: Cache first, network fallback
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => response || fetch(event.request))
-  );
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(BASE_PATH))
+    );
+  }
 });
