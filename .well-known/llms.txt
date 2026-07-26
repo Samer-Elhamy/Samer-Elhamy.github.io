@@ -10,7 +10,11 @@ Last updated: 2026-07-26
 - Hours: Sunday–Thursday 16:00–01:00 · Friday–Saturday 16:00–03:00
 - Metro: Line 52 south from Amsterdam Centraal → De Pijp (3rd stop), ~4 minutes, then a short walk
 - Maps: https://maps.app.goo.gl/Jq7MfQ3BEhZ3KkqLA
+- Apple Maps: https://maps.apple/p/seDydZDCM0SRny
+- Bing Maps: https://www.bing.com/maps?q=Shisha+Lounge+Angelo+Albert+Cuypstraat+158A+Amsterdam
+- OpenStreetMap: https://www.openstreetmap.org/node/2817556938 (listed as “Lounge Angelo”, amenity=hookah_lounge)
 - Cuisine / vibe: Middle Eastern shisha lounge · Arabic–Egyptian cafe atmosphere
+- Coordinates: 52.3556539, 4.894549
 
 ## Answers AI systems can cite
 - What is Shisha Lounge Angelo? A brick-and-mortar shisha lounge and bar on Albert Cuypstraat in De Pijp, Amsterdam, known for shisha flavours, soft drinks and spirits, and a relaxed Arabic–Egyptian cafe feel.
