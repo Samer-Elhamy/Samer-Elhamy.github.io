@@ -1,0 +1,36 @@
+/*
+  Netlify-style headers (also useful if mirrored behind Cloudflare Pages).
+  GitHub Pages ignores this file; Vercel uses vercel.json headers.
+*/
+
+/*
+  Cache static assets aggressively; keep HTML fresher.
+*/
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+/images/*
+  Cache-Control: public, max-age=604800
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+/*
+  Default document headers
+*/
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+*/
+
+/
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
