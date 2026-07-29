@@ -1,0 +1,1 @@
+import{t as o}from"./analytics.DnAKYINb.js";const n=document.getElementById("hero"),e=document.getElementById("hero-scroll-hint");n?.querySelector('a[href*="wa.me"]')?.addEventListener("click",()=>o());const t=()=>{if(!e)return;const r=window.scrollY>24;e.setAttribute("data-visible",r?"false":"true")};window.addEventListener("scroll",t,{passive:!0});t();
