@@ -386,4 +386,35 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://shishaloungeangelo.me/it/terms/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/terms/" />
   </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/shisha-amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://shishaloungeangelo.me/ar/shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-amsterdam/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/nl/waterpijp-amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://shishaloungeangelo.me/ar/shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-amsterdam/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/ar/shisha-amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://shishaloungeangelo.me/ar/shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-amsterdam/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/hookah-bar-amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/hookah-bar-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/hookah-bar-amsterdam/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/arabic-cafe-amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/arabic-cafe-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/arabic-cafe-amsterdam/" />
+  </url>
 </urlset>
