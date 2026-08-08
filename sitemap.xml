@@ -420,6 +420,13 @@
   <url>
     <loc>https://shishaloungeangelo.me/shisha-de-pijp/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/nl/waterpijp-de-pijp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-de-pijp/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
   </url>
   <url>
