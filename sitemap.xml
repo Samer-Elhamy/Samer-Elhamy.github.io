@@ -417,4 +417,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/arabic-cafe-amsterdam/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/arabic-cafe-amsterdam/" />
   </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/shisha-de-pijp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/private-booking/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/private-booking/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/private-booking/" />
+  </url>
 </urlset>
