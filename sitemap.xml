@@ -434,4 +434,9 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/private-booking/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/private-booking/" />
   </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/review-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/review-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/review-policy/" />
+  </url>
 </urlset>
