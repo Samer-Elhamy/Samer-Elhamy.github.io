@@ -1,0 +1,4 @@
+# Optional custom domain for the owner dashboard only.
+# Point a DNS CNAME (e.g. stats.shishaloungeangelo.me) at Samer-Elhamy.github.io
+# and enable that domain on the github.io repo — do NOT put this CNAME in the
+# marketing site root. Left empty on purpose; path deploy uses /angelo-stats/.
