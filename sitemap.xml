@@ -421,18 +421,44 @@
     <loc>https://shishaloungeangelo.me/shisha-de-pijp/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://shishaloungeangelo.me/ar/shisha-de-pijp/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
   </url>
   <url>
     <loc>https://shishaloungeangelo.me/nl/waterpijp-de-pijp/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://shishaloungeangelo.me/ar/shisha-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/ar/shisha-de-pijp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/waterpijp-de-pijp/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://shishaloungeangelo.me/ar/shisha-de-pijp/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-de-pijp/" />
   </url>
   <url>
     <loc>https://shishaloungeangelo.me/private-booking/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/private-booking/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/private-booking/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/birthday-shisha-amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/birthday-shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/verjaardag-shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/birthday-shisha-amsterdam/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/nl/verjaardag-shisha-amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/birthday-shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://shishaloungeangelo.me/nl/verjaardag-shisha-amsterdam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/birthday-shisha-amsterdam/" />
+  </url>
+  <url>
+    <loc>https://shishaloungeangelo.me/shisha-flavours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shishaloungeangelo.me/shisha-flavours/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shishaloungeangelo.me/shisha-flavours/" />
   </url>
   <url>
     <loc>https://shishaloungeangelo.me/review-policy/</loc>
