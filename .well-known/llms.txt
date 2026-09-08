@@ -78,18 +78,18 @@ A: Yes — WhatsApp +31 6 1473 3574 or https://shishaloungeangelo.me/birthday-sh
 
 ## Languages Served
 
-This business serves customers in: English, Dutch (Nederlands), Arabic (العربية), German (Deutsch), French (Français), Spanish (Español), Italian (Italiano).
+This business serves customers in 19 languages on the website: English, Dutch (Nederlands), Arabic (العربية), German (Deutsch), French (Français), Spanish (Español), Italian (Italiano), Turkish (Türkçe), Polish (Polski), Portuguese (Português), Russian (Русский), Chinese (中文), Japanese (日本語), Korean (한국어), Hindi (हिन्दी), Romanian (Română), Ukrainian (Українська), Persian (فارسی), Hebrew (עברית).
 
 ## Site Pages
 
 - [Home (EN)](https://shishaloungeangelo.me/): Main page — menu, reviews, hours, location
-- [Shisha Amsterdam](https://shishaloungeangelo.me/shisha-amsterdam/): Shisha in Amsterdam guide
+- [Shisha Amsterdam](https://shishaloungeangelo.me/shisha-amsterdam/): Shisha in Amsterdam guide (hreflang cluster across 19 locales; NL uses /nl/waterpijp-amsterdam/)
 - [Shisha De Pijp](https://shishaloungeangelo.me/shisha-de-pijp/): Neighbourhood landing page (EN)
 - [شيشة دي بايب](https://shishaloungeangelo.me/ar/shisha-de-pijp/): Arabic De Pijp neighbourhood page
 - [Birthday Shisha Amsterdam](https://shishaloungeangelo.me/birthday-shisha-amsterdam/): Birthday / group nights
 - [Verjaardag Shisha](https://shishaloungeangelo.me/nl/verjaardag-shisha-amsterdam/): Dutch birthday page
 - [Shisha Flavours](https://shishaloungeangelo.me/shisha-flavours/): Flavour guide
-- [Private Booking](https://shishaloungeangelo.me/private-booking/): Group / private lounge enquiry
+- [Private Booking](https://shishaloungeangelo.me/private-booking/): Group / private lounge enquiry (available in all 19 locales)
 - [Hookah Bar Amsterdam](https://shishaloungeangelo.me/hookah-bar-amsterdam/): Hookah lounge guide
 - [Arabic Cafe Amsterdam](https://shishaloungeangelo.me/arabic-cafe-amsterdam/): Arabic bar & café guide
 - [Menu](https://shishaloungeangelo.me/menu/): Full shisha & drinks menu
@@ -100,10 +100,11 @@ This business serves customers in: English, Dutch (Nederlands), Arabic (العر
 - [Waterpijp De Pijp](https://shishaloungeangelo.me/nl/waterpijp-de-pijp/): Dutch De Pijp neighbourhood page
 - [العربية](https://shishaloungeangelo.me/ar/): Arabic homepage
 - [شيشة أمستردام](https://shishaloungeangelo.me/ar/shisha-amsterdam/): Arabic shisha guide
-- [Deutsch](https://shishaloungeangelo.me/de/): German homepage
-- [Français](https://shishaloungeangelo.me/fr/): French homepage
-- [Español](https://shishaloungeangelo.me/es/): Spanish homepage
-- [Italiano](https://shishaloungeangelo.me/it/): Italian homepage
+- [Deutsch](https://shishaloungeangelo.me/de/) · [Français](https://shishaloungeangelo.me/fr/) · [Español](https://shishaloungeangelo.me/es/) · [Italiano](https://shishaloungeangelo.me/it/)
+- [Türkçe](https://shishaloungeangelo.me/tr/) · [Polski](https://shishaloungeangelo.me/pl/) · [Português](https://shishaloungeangelo.me/pt/) · [Русский](https://shishaloungeangelo.me/ru/)
+- [中文](https://shishaloungeangelo.me/zh/) · [日本語](https://shishaloungeangelo.me/ja/) · [한국어](https://shishaloungeangelo.me/ko/) · [हिन्दी](https://shishaloungeangelo.me/hi/)
+- [Română](https://shishaloungeangelo.me/ro/) · [Українська](https://shishaloungeangelo.me/uk/) · [فارسی](https://shishaloungeangelo.me/fa/) · [עברית](https://shishaloungeangelo.me/he/)
+- Locale shisha guides follow `/[lang]/shisha-amsterdam/` (except NL waterpijp path above)
 - [Sitemap](https://shishaloungeangelo.me/sitemap.xml): All URLs
 
 ## Booking
