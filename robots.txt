@@ -1,29 +1,47 @@
 User-agent: *
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 # AI search crawlers — explicitly allowed for citations / answers
 User-agent: GPTBot
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 User-agent: Google-CloudVertexBot
 Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
 
 Sitemap: https://shishaloungeangelo.me/sitemap.xml
