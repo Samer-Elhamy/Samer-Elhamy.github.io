@@ -3,7 +3,15 @@ Allow: /
 Disallow: /angelo-stats/
 Disallow: /m/
 
-# AI search crawlers — explicitly allowed for citations / answers
+# Multi-search engine rules — Yandex Clean-param for UTM parameter consolidation
+User-agent: Yandex
+User-agent: YandexBot
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content /
+Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
+
+# AI search crawlers — explicitly allowed for citations, direct answers, and grounding
 User-agent: GPTBot
 Allow: /
 Disallow: /angelo-stats/
@@ -40,6 +48,11 @@ Disallow: /angelo-stats/
 Disallow: /m/
 
 User-agent: Google-CloudVertexBot
+Allow: /
+Disallow: /angelo-stats/
+Disallow: /m/
+
+User-agent: Applebot-Extended
 Allow: /
 Disallow: /angelo-stats/
 Disallow: /m/
