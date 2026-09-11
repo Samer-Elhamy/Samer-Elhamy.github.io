@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Shisha Lounge Angelo | Amsterdam De Pijp — Apple Craft Edition</title>
+  <style>
+    /* ==========================================================================
+       SHISHA LOUNGE ANGELO — APPLE CRAFTSMANSHIP EDITION
+       Preserves 100% of Angelo's authentic brand identity, dark luxury theme,
+       crimson red & emerald accents, while executing every layout, typography,
+       glassmorphism, and spacing detail with Apple's design precision.
+       ========================================================================== */
+    :root {
+      /* Brand Identity Colors */
+      --bg-canvas: #09090b;
+      --bg-surface-1: #121215;
+      --bg-surface-2: #18181c;
+      --bg-surface-elevated: #202026;
+      
+      --brand-red: #e11d2e;
+      --brand-red-glow: rgba(225, 29, 46, 0.22);
+      --brand-red-soft: rgba(225, 29, 46, 0.12);
+      
+      --brand-green: #25d366;
+      --brand-green-hover: #20ba59;
+      --brand-green-glow: rgba(37, 211, 102, 0.25);
+
+      --color-gold: #f5a623;
+      
+      --text-primary: #f5f5f7;
+      --text-secondary: #a1a1a6;
+      --text-tertiary: #6e6e73;
+      
+      /* Apple Glass Tokens */
+      --glass-nav: rgba(10, 10, 12, 0.78);
+      --glass-card: rgba(22, 22, 26, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-border-focus: rgba(225, 29, 46, 0.45);
+      --glass-specular: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      --studio-shadow: 0 20px 48px rgba(0, 0, 0, 0.55);
+      --pill-radius: 980px;
+      
+      /* Apple Typography Engine */
+      --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      line-height: 1.47;
+      font-size: 17px;
+      letter-spacing: -0.022em;
+      overflow-x: hidden;
+      selection-background-color: var(--brand-red);
+      selection-color: #ffffff;
+    }
+
+    ::selection {
+      background-color: var(--brand-red);
+      color: #ffffff;
+    }
+
+    /* --------------------------------------------------------------------------
+       1. APPLE-STYLE ULTRA-SLIM GLASS HEADER (52px)
+       -------------------------------------------------------------------------- */
+    .header-nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 52px;
+      background: var(--glass-nav);
+      backdrop-filter: saturate(180%) blur(24px);
+      -webkit-backdrop-filter: saturate(180%) blur(24px);
+      border-bottom: 1px solid var(--glass-border);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+
+    .nav-container {
+      width: 100%;
+      max-width: 1040px;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      transition: opacity 0.2s;
+    }
+
+    .brand-crest {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--brand-red), #900c17);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 2px 8px var(--brand-red-glow);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      transition: color 0.15s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lang-chip {
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: var(--pill-radius);
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.15s ease;
+    }
+
+    .lang-chip:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+    }
+
+    .nav-cta-btn {
+      background: var(--brand-green);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: var(--pill-radius);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px var(--brand-green-glow);
+      transition: transform 0.15s, background 0.15s;
+    }
+
+    .nav-cta-btn:hover {
+      background: var(--brand-green-hover);
+      transform: scale(1.02);
+    }
+
+    /* --------------------------------------------------------------------------
+       2. HERO SECTION — CINEMATIC DEPTH & ELEGANT TYPOGRAPHY
+       -------------------------------------------------------------------------- */
+    .hero-section {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: center;
+      padding: 60px 20px 80px 20px;
+      overflow: hidden;
+    }
+
+    /* Hero Ambient Media & Controlled Lighting */
+    .hero-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .hero-backdrop img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.62) contrast(1.05);
+      transform: scale(1.01);
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Apple-style gradient vignette: replaces noisy multi-color blurs with pure cinematic gradients */
+    .hero-vignette {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(9, 9, 11, 0.4) 0%,
+        rgba(9, 9, 11, 0.2) 30%,
+        rgba(9, 9, 11, 0.75) 75%,
+        var(--bg-canvas) 100%
+      );
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Location & Subway Transit Micro-Badge */
+    .metro-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(20, 20, 24, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--pill-radius);
+      padding: 6px 16px;
+      margin-bottom: 22px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .metro-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--brand-red);
+      box-shadow: 0 0 10px var(--brand-red);
+    }
+
+    .metro-text {
+      font-size: 13px;
+      font-weight: 500;
+      color: #f5f5f7;
+      letter-spacing: -0.01em;
+    }
+
+    .metro-sep {
+      color: var(--text-tertiary);
+    }
+
+    .metro-station {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* Apple-Precision Headline (SF Pro Optical Rhythms) */
+    .hero-title {
+      font-size: clamp(38px, 6.2vw, 68px);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+      color: #ffffff;
+      margin-bottom: 18px;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-title .accent-word {
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-title .accent-word::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand-red), transparent);
+      border-radius: 2px;
+    }
+
+    .hero-description {
+      font-size: clamp(17px, 2.1vw, 21px);
+      font-weight: 400;
+      line-height: 1.42;
+      color: #d1d1d6;
+      max-width: 620px;
+      margin-bottom: 34px;
+      letter-spacing: -0.018em;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    /* CTA Button Group */
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 44px;
+    }
+
+    .btn-whatsapp-hero {
+      background: var(--brand-green);
+      color: #ffffff;
+      padding: 11px 26px;
+      border-radius: var(--pill-radius);
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      box-shadow: 0 8px 24px var(--brand-green-glow);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-whatsapp-hero:hover {
+      background: var(--brand-green-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-apple-glass-pill {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      padding: 11px 24px;
+      border-radius: var(--pill-radius);
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-apple-glass-pill:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-apple-glass-pill .chevron {
+      font-size: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-apple-glass-pill:hover .chevron {
+      transform: translateX(4px);
+    }
+
+    /* Trust & Rating Bar (Micro-specs in Apple Style) */
+    .hero-stats-row {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 12px 24px;
+      border-radius: var(--pill-radius);
+      background: rgba(14, 14, 17, 0.6);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+    }
+
+    .stat-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .stat-pill strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .star-icon {
+      color: #ffb800;
+    }
+
+    /* --------------------------------------------------------------------------
+       3. ABOUT / STORY SECTION — LUXURY PRODUCT-AS-HERO SHOWCASE
+       -------------------------------------------------------------------------- */
+    .section {
+      padding: 100px 24px;
+      max-width: 1040px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-tag {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brand-red);
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 4vw, 44px);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      font-size: 17px;
+      line-height: 1.45;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      letter-spacing: -0.015em;
+    }
+
+    /* 2-Column Story Bento */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .story-card-visual {
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      height: 420px;
+      box-shadow: var(--studio-shadow);
+      background: var(--bg-surface-1);
+    }
+
+    .story-card-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .story-card-visual:hover img {
+      transform: scale(1.03);
+    }
+
+    .story-card-visual .visual-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 24px;
+      background: linear-gradient(180deg, transparent 0%, rgba(10, 10, 12, 0.92) 100%);
+    }
+
+    .story-card-visual .visual-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #fff;
+      background: rgba(225, 29, 46, 0.8);
+      padding: 4px 10px;
+      border-radius: var(--pill-radius);
+    }
+
+    .story-card-content {
+      background: var(--bg-surface-1);
+      border-radius: 20px;
+      padding: 44px 38px;
+      box-shadow: var(--studio-shadow);
+      border: 1px solid var(--glass-border);
+      position: relative;
+    }
+
+    .story-card-content h3 {
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .story-card-content p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .story-feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .feature-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .feature-icon-box {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--brand-red-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brand-red);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .feature-text h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+
+    .feature-text p {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      margin-bottom: 0;
+    }
+
+    /* --------------------------------------------------------------------------
+       4. INTERACTIVE MENU — APPLE LIQUID SEGMENTED CONTROL
+       -------------------------------------------------------------------------- */
+    .menu-segmented-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 6px;
+      background: var(--bg-surface-1);
+      border-radius: var(--pill-radius);
+      max-width: 580px;
+      margin: 0 auto 44px auto;
+      border: 1px solid var(--glass-border);
+      overflow-x: auto;
+    }
+
+    .menu-tab {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-family: var(--font-family);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 20px;
+      border-radius: var(--pill-radius);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .menu-tab.active {
+      background: var(--brand-red);
+      color: #ffffff;
+      box-shadow: 0 4px 14px var(--brand-red-glow);
+    }
+
+    .menu-tab:hover:not(.active) {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Menu Grid (Pure Surfaces, No harsh white outlines) */
+    .menu-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item-card {
+      background: var(--bg-surface-1);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid var(--glass-border);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .menu-item-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 255, 255, 0.16);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .item-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.015em;
+    }
+
+    .item-tag {
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--brand-red-soft);
+      color: var(--brand-red);
+      padding: 3px 8px;
+      border-radius: var(--pill-radius);
+      letter-spacing: 0.02em;
+    }
+
+    .item-desc {
+      font-size: 14px;
+      line-height: 1.45;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .item-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .item-price {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .item-order-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--brand-green);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .item-order-link:hover {
+      text-decoration: underline;
+    }
+
+    /* --------------------------------------------------------------------------
+       5. GALLERY & ATMOSPHERE — HIGH DENSITY VISUAL GRID
+       -------------------------------------------------------------------------- */
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .gallery-slot {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      height: 260px;
+      background: var(--bg-surface-1);
+    }
+
+    .gallery-slot.wide {
+      grid-column: span 2;
+    }
+
+    .gallery-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .gallery-slot:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, transparent 100%);
+      font-size: 13px;
+      font-weight: 500;
+      color: #ffffff;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: all 0.25s ease;
+    }
+
+    .gallery-slot:hover .gallery-caption {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* --------------------------------------------------------------------------
+       6. LOCATION & OPENING HOURS — METICULOUS MINIMALISM
+       -------------------------------------------------------------------------- */
+    .location-box {
+      background: var(--bg-surface-1);
+      border-radius: 24px;
+      border: 1px solid var(--glass-border);
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .loc-info h3 {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .loc-address {
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .hours-table {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .hours-row .days {
+      color: var(--text-secondary);
+    }
+
+    .hours-row .time {
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .loc-actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    .map-preview-wrap {
+      border-radius: 18px;
+      overflow: hidden;
+      height: 280px;
+      background: var(--bg-surface-2);
+      position: relative;
+      border: 1px solid var(--glass-border);
+    }
+
+    .map-preview-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .map-overlay-card {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(14, 14, 18, 0.85);
+      backdrop-filter: blur(12px);
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--glass-border);
+      font-size: 12px;
+    }
+
+    /* --------------------------------------------------------------------------
+       7. FOOTER — SUBTLE & REFINED
+       -------------------------------------------------------------------------- */
+    .apple-lounge-footer {
+      border-top: 1px solid var(--glass-border);
+      background: #08080a;
+      padding: 60px 24px 80px 24px;
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    .footer-content {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-links-row {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .footer-links-row a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links-row a:hover {
+      color: #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 820px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+      .location-box {
+        grid-template-columns: 1fr;
+      }
+      .gallery-masonry {
+        grid-template-columns: 1fr 1fr;
+      }
+      .gallery-slot.wide {
+        grid-column: span 1;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .gallery-masonry {
+        grid-template-columns: 1fr;
+      }
+      .hero-stats-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        border-radius: 16px;
+      }
+      .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+      }
+      .btn-whatsapp-hero, .btn-apple-glass-pill {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. SLIM LIQUID GLASS NAV (Preserving brand crest, name, and WhatsApp action) -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-crest">A</div>
+        <span>Shisha Lounge Angelo</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#atmosphere">Atmosphere</a>
+        <a href="#location">Location</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#ar" class="lang-chip" onclick="alert('Language switch demo'); return false;">العربية</a>
+        <a href="#nl" class="lang-chip" onclick="alert('Language switch demo'); return false;">NL</a>
+        <a href="https://wa.me/31681729000?text=Hello%20Angelo%20Lounge,%20I'd%20like%20to%20reserve%20a%20table" class="nav-cta-btn" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 1.741 1.956 2.062.2.043.376.046.52.022.217-.036.678-.277.774-.544.095-.268.095-.498.067-.547-.028-.049-.101-.078-.217-.136z"/>
+          </svg>
+          Reserve
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO — MAINTAINING LUXURY DARK ATMOSPHERE + APPLE PRECISION -->
+  <section class="hero-section">
+    <div class="hero-backdrop">
+      <img src="images/hero.jpg" alt="Angelo Lounge interior ambiance">
+      <div class="hero-vignette"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Subway transit chip in Apple pill form -->
+      <div class="metro-badge">
+        <span class="metro-dot"></span>
+        <span class="metro-text">Albert Cuypstraat 158 A</span>
+        <span class="metro-sep">·</span>
+        <span class="metro-station">De Pijp Metro 3 min</span>
+      </div>
+
+      <h1 class="hero-title">
+        The benchmark for <span class="accent-word">shisha</span> in Amsterdam.
+      </h1>
+
+      <p class="hero-description">
+        Authentic Egyptian hospitality, artisan hookah engineering, and craft drinks in the vibrant cultural quarter of De Pijp.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://wa.me/31681729000?text=Hello%20Angelo%20Lounge,%20I'd%20like%20to%20reserve%20a%20table" class="btn-whatsapp-hero" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 1.741 1.956 2.062.2.043.376.046.52.022.217-.036.678-.277.774-.544.095-.268.095-.498.067-.547-.028-.049-.101-.078-.217-.136z"/>
+          </svg>
+          Book via WhatsApp
+        </a>
+
+        <a href="#menu" class="btn-apple-glass-pill">
+          Explore Menu <span class="chevron">›</span>
+        </a>
+      </div>
+
+      <!-- Trust signals / Specs -->
+      <div class="hero-stats-row">
+        <div class="stat-pill">
+          <span class="star-icon">★</span>
+          <span><strong>4.3 Rating</strong> (203 Google Reviews)</span>
+        </div>
+        <div class="stat-pill">
+          <span>🕒 <strong>Late-Night</strong> Until 03:00 Weekends</span>
+        </div>
+        <div class="stat-pill">
+          <span>🍹 Drinks from <strong>€4.00</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. STORY SECTION — HOSPITALITY MEETS MODERN LUXURY -->
+  <section id="story" class="section">
+    <div class="section-header">
+      <span class="section-tag">Since 2013</span>
+      <h2 class="section-title">The Angelo Story</h2>
+      <p class="section-subtitle">A decade of warmth, premium blends, and community nestled right off the famous Albert Cuyp market.</p>
+    </div>
+
+    <div class="story-grid">
+      <div class="story-card-visual">
+        <img src="images/gallery/interior-lounge-main.jpg" alt="Angelo Lounge interior couches">
+        <div class="visual-overlay">
+          <span class="visual-badge">De Pijp Cultural Hub</span>
+        </div>
+      </div>
+
+      <div class="story-card-content">
+        <h3>More than a lounge. A ritual.</h3>
+        <p>Whether you're finishing dinner in De Pijp, catching a Champions League fixture with friends, or unwinding with fresh mint tea and high-grade charcoal, Angelo delivers an effortless luxury vibe.</p>
+
+        <div class="story-feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-box">✓</div>
+            <div class="feature-text">
+              <h4>German Brass Engineering</h4>
+              <p>Optimum airflow, ice chambers, and surgical steel heat management.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-icon-box">✓</div>
+            <div class="feature-text">
+              <h4>Artisan Egyptian Tea & Coffee</h4>
+              <p>Fresh Moroccan mint brewed tableside with toasted pine nuts and cardamom.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-icon-box">✓</div>
+            <div class="feature-text">
+              <h4>Cinema Screens & Live Sports</h4>
+              <p>Crystal acoustics and private corner seating for uninterrupted conversations.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#location" class="btn-apple-glass-pill" style="font-size: 13px; padding: 8px 18px;">
+          Find Us in Amsterdam <span class="chevron">›</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MENU SECTION — CLEAN LIQUID CARDS WITH REAL MENU DATA -->
+  <section id="menu" class="section">
+    <div class="section-header">
+      <span class="section-tag">Curated Selection</span>
+      <h2 class="section-title">Shisha, Teas & Refreshments</h2>
+      <p class="section-subtitle">Every bowl is prepared fresh with high-density coconut briquettes and clean airflow.</p>
+    </div>
+
+    <!-- Apple-style Pill Segmented Control -->
+    <div class="menu-segmented-bar" id="menuTabs">
+      <button class="menu-tab active" onclick="filterMenu('shisha', this)">Shisha Flavours</button>
+      <button class="menu-tab" onclick="filterMenu('hot', this)">Hot Teas & Coffee</button>
+      <button class="menu-tab" onclick="filterMenu('drinks', this)">Cocktails & Drinks</button>
+      <button class="menu-tab" onclick="filterMenu('all', this)">All Items</button>
+    </div>
+
+    <!-- Menu Cards -->
+    <div class="menu-cards-grid" id="menuGrid">
+      
+      <!-- Shisha Item 1 -->
+      <div class="menu-item-card" data-cat="shisha">
+        <div>
+          <div class="item-top">
+            <div class="item-title">Love 66 Signature</div>
+            <span class="item-tag">Top Pick</span>
+          </div>
+          <p class="item-desc">Watermelon, honeydew melon, passion fruit, and a refreshing icy cooling finish.</p>
+        </div>
+        <div class="item-footer">
+          <span class="item-price">€22.00</span>
+          <a href="https://wa.me/31681729000?text=I'd%20like%20to%20order%20Love%2066" class="item-order-link">Order table ›</a>
+        </div>
+      </div>
+
+      <!-- Shisha Item 2 -->
+      <div class="menu-item-card" data-cat="shisha">
+        <div>
+          <div class="item-top">
+            <div class="item-title">Double Apple & Mint</div>
+            <span class="item-tag">Classic</span>
+          </div>
+          <p class="item-desc">Authentic Al Fakher Nakhla traditional aniseed apple with crisp herbal spearmint.</p>
+        </div>
+        <div class="item-footer">
+          <span class="item-price">€20.00</span>
+          <a href="https://wa.me/31681729000?text=I'd%20like%20to%20order%20Double%20Apple" class="item-order-link">Order table ›</a>
+        </div>
+      </div>
+
+      <!-- Shisha Item 3 -->
+      <div class="menu-item-card" data-cat="shisha">
+        <div>
+          <div class="item-top">
+            <div class="item-title">Mi Amor & Blue Ice</div>
+            <span class="item-tag">House Blend</span>
+          </div>
+          <p class="item-desc">Sweet banana and pineapple fusion chilled with deep forest berry frost.</p>
+        </div>
+        <div class="item-footer">
+          <span class="item-price">€22.00</span>
+          <a href="https://wa.me/31681729000?text=I'd%20like%20to%20order%20Mi%20Amor" class="item-order-link">Order table ›</a>
+        </div>
+      </div>
+
+      <!-- Hot Drinks Item 1 -->
+      <div class="menu-item-card" data-cat="hot">
+        <div>
+          <div class="item-top">
+            <div class="item-title">Moroccan Fresh Mint Tea</div>
+            <span class="item-tag">Handcrafted</span>
+          </div>
+          <p class="item-desc">Freshly harvested spearmint leaves, gunpowder green tea, and raw amber sugar crystals.</p>
+        </div>
+        <div class="item-footer">
+          <span class="item-price">€4.50</span>
+          <a href="https://wa.me/31681729000" class="item-order-link">Order table ›</a>
+        </div>
+      </div>
+
+      <!-- Hot Drinks Item 2 -->
+      <div class="menu-item-card" data-cat="hot">
+        <div>
+          <div class="item-top">
+            <div class="item-title">Egyptian Cardamom Coffee</div>
+            <span class="item-tag">Traditional</span>
+          </div>
+          <p class="item-desc">Slow-brewed in copper cezve with fragrant green cardamom pods and thick golden crema.</p>
+        </div>
+        <div class="item-footer">
+          <span class="item-price">€4.00</span>
+          <a href="https://wa.me/31681729000" class="item-order-link">Order table ›</a>
+        </div>
+      </div>
+
+      <!-- Drinks Item 1 -->
+      <div class="menu-item-card" data-cat="drinks">
+        <div>
+          <div class="item-top">
+            <div class="item-title">Strawberry Virgin Mojito</div>
+            <span class="item-tag">Craft Mocktail</span>
+          </div>
+          <p class="item-desc">Muddled wild strawberries, fresh Persian limes, crushed cane sugar, and sparkling soda.</p>
+        </div>
+        <div class="item-footer">
+          <span class="item-price">€7.50</span>
+          <a href="https://wa.me/31681729000" class="item-order-link">Order table ›</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. GALLERY / ATMOSPHERE -->
+  <section id="atmosphere" class="section">
+    <div class="section-header">
+      <span class="section-tag">Visual Tour</span>
+      <h2 class="section-title">Step Inside Angelo</h2>
+      <p class="section-subtitle">Comfortable leather booths, ambient lighting, and late-night vibes in Amsterdam.</p>
+    </div>
+
+    <div class="gallery-masonry">
+      <div class="gallery-slot wide">
+        <img src="images/gallery/interior-lounge-main.jpg" alt="Angelo Lounge interior seating">
+        <div class="gallery-caption">Main Lounge Seating & Ambience</div>
+      </div>
+      <div class="gallery-slot">
+        <img src="images/gallery/alfakher-flavours.jpg" alt="Al Fakher tobacco selection">
+        <div class="gallery-caption">Premium Leaf Selection</div>
+      </div>
+      <div class="gallery-slot">
+        <img src="images/gallery/interior-shisha-table.jpg" alt="Shisha table setup">
+        <div class="gallery-caption">Table Hookah Setups</div>
+      </div>
+      <div class="gallery-slot wide">
+        <img src="images/gallery/exterior-night.jpg" alt="Angelo Lounge exterior at night">
+        <div class="gallery-caption">Albert Cuypstraat by Night</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. LOCATION & OPENING HOURS -->
+  <section id="location" class="section">
+    <div class="location-box">
+      <div class="loc-info">
+        <span class="section-tag">Visit Us</span>
+        <h3>Albert Cuypstraat 158 A</h3>
+        <p class="loc-address">
+          1073 BK Amsterdam, Netherlands<br>
+          Located in the heart of De Pijp.
+        </p>
+
+        <div class="hours-table">
+          <div class="hours-row">
+            <span class="days">Sunday — Thursday</span>
+            <span class="time">16:00 — 01:00</span>
+          </div>
+          <div class="hours-row">
+            <span class="days">Friday & Saturday</span>
+            <span class="time" style="color: var(--brand-red);">16:00 — 03:00 (Late Night)</span>
+          </div>
+        </div>
+
+        <div class="loc-actions">
+          <a href="https://maps.apple/p/seDydZDCM0SRny" class="btn-apple-glass-pill" style="font-size: 13px;">
+            Open in Apple Maps ↗
+          </a>
+          <a href="https://maps.app.goo.gl/Jq7MfQ3BEhZ3KkqLA" class="btn-apple-glass-pill" style="font-size: 13px;">
+            Google Maps ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="map-preview-wrap">
+        <img src="images/gallery/exterior-night.jpg" alt="Angelo entrance map marker">
+        <div class="map-overlay-card">
+          <strong style="color: #fff; display: block; margin-bottom: 2px;">🚇 Metro Line 52</strong>
+          <span style="color: var(--text-secondary);">3 min walk from De Pijp Station</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER -->
+  <footer class="apple-lounge-footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div>
+          <strong style="color: #fff; font-size: 14px;">Shisha Lounge Angelo</strong>
+          <span style="display: block; margin-top: 4px;">Albert Cuypstraat 158 A, 1073 BK Amsterdam · Eetcafe Angelo</span>
+        </div>
+        <ul class="footer-links-row">
+          <li><a href="#story">Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#atmosphere">Gallery</a></li>
+          <li><a href="https://wa.me/31681729000">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        18+ Only. Shisha Lounge Angelo adheres strictly to local Dutch hospitality and tobacco regulations.<br>
+        Crafted with Apple Precision & Design Standards © 2026.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function filterMenu(cat, btn) {
+      document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.menu-item-card');
+      cards.forEach(c => {
+        if (cat === 'all' || c.getAttribute('data-cat') === cat) {
+          c.style.display = 'flex';
+        } else {
+          c.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
