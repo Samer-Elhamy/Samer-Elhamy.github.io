@@ -245,21 +245,23 @@
     }
 
     .btn-reserve-nav {
-      background: var(--brand-green);
-      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #f5f5f7;
       font-size: 12px;
       font-weight: 500;
-      padding: 5px 14px;
+      padding: 6px 16px;
       border-radius: var(--apple-pill);
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      box-shadow: 0 4px 14px var(--brand-green-glow);
-      transition: transform 0.15s, background 0.15s;
+      backdrop-filter: blur(12px);
+      transition: all 0.2s ease;
     }
 
     .btn-reserve-nav:hover {
-      background: var(--brand-green-hover);
+      background: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
       transform: scale(1.02);
     }
 
@@ -1077,7 +1079,11 @@
   <header class="apple-header">
     <div class="container header-inner">
       <div class="brand-group">
-        <div class="brand-crest">A</div>
+        <div class="brand-crest">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
         <span class="brand-title">Shisha Lounge Angelo</span>
       </div>
 
@@ -1100,7 +1106,7 @@
   <!-- 2. HERO — CINEMATIC LUXURY WITH PRODUCT-AS-HERO -->
   <section class="hero-wrap">
     <div class="hero-media">
-      <img src="images/hero.jpg" alt="Angelo Lounge interior ambiance">
+      <img src="/_astro/hero.D70dmzta_Z1oO5Nt.webp" alt="Angelo Lounge interior ambiance">
       <div class="hero-scrim"></div>
     </div>
 
@@ -1131,20 +1137,23 @@
         </a>
       </div>
 
-      <!-- Trust Signals & Technical Specs -->
+      <!-- Trust Signals & Technical Specs (Refined Monochrome SF Badges) -->
       <div class="hero-specs-bar">
         <div class="spec-node">
-          <span style="color: #ffb800;">★</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#f5a623" stroke="#f5a623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           <span><strong>4.3 Rating</strong> (203 Google Reviews)</span>
         </div>
         <div class="spec-node">
-          <span>🕒 <strong>Late-Night</strong> Until 03:00 Weekends</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span><strong>Late-Night</strong> Until 03:00 Weekends</span>
         </div>
         <div class="spec-node">
-          <span>💨 <strong>Natural Coconut</strong> Coals</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"></path><path d="m4.93 10.93 1.41 1.41"></path><path d="M2 18h2"></path><path d="M20 18h2"></path><path d="m19.07 10.93-1.41 1.41"></path><path d="M22 22H2"></path><path d="m8 22 4-10 4 10"></path></svg>
+          <span><strong>Natural Coconut</strong> Coals</span>
         </div>
         <div class="spec-node">
-          <span>🍹 Drinks from <strong>€4.00</strong></span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+          <span>Drinks from <strong>€4.00</strong></span>
         </div>
       </div>
     </div>
@@ -1214,7 +1223,7 @@
 
       <div class="about-bento">
         <div class="about-visual-card">
-          <img src="images/gallery/interior-lounge-main.jpg" alt="Interior lounge of Shisha Lounge Angelo">
+          <img src="/_astro/interior-lounge-main.2_KVFr4n_2bSoG8.webp" alt="Interior lounge of Shisha Lounge Angelo">
         </div>
 
         <div class="about-content-card">
@@ -1451,7 +1460,7 @@
         </div>
 
         <div class="map-box">
-          <img src="images/gallery/exterior-night.jpg" alt="Angelo Lounge entrance at night">
+          <img src="/_astro/exterior-night.CL6cocAS_2vq2z2.webp" alt="Angelo Lounge entrance at night">
         </div>
       </div>
     </div>
